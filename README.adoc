@@ -27,7 +27,7 @@ You can take a look at the link:sonar-project.properties[sonar-project.propertie
 
 = Documentation
 
-- https://sonarcloud.io/documentation/analysis/languages/cfamily[Documentation of the C, C++ and Objective-C plugin and its Build Wrapper]
+- https://docs.sonarcloud.io/advanced-setup/languages/c-c-objective-c/[Documentation of the C, C++ and Objective-C plugin and its Build Wrapper]
 - https://docs.sonarcloud.io/getting-started/github/[Documentation of using SonarCloud with GitHub]
 - https://docs.sonarcloud.io/advanced-setup/languages/c-c-objective-c/#analysis-cache[Configuring C, C++ and Objective-C analysis cache]
 - https://docs.sonarcloud.io/advanced-setup/languages/c-c-objective-c/#multithreaded-code-scan[Configuring multithreaded execution]
