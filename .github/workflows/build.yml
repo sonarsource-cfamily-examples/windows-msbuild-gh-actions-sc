@@ -18,7 +18,7 @@ jobs:
       - name: Set up msbuild
         uses: microsoft/setup-msbuild@v1.1
       - name: Install sonar-scanner and build-wrapper
-        uses: SonarSource/sonarcloud-github-c-cpp-addition@master
+        uses: SonarSource/sonarcloud-github-c-cpp-addition@v1
       - name: Run build-wrapper
         run: |
           build-wrapper-win-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} msbuild sonar_scanner_example.vcxproj /t:rebuild /nodeReuse:false
@@ -28,4 +28,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }} # Put the name of your token here
         run: |
           sonar-scanner --define sonar.cfamily.build-wrapper-output="${{ env.BUILD_WRAPPER_OUT_DIR }}"
+          
 
