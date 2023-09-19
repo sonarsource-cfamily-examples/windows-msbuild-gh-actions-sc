@@ -4,6 +4,10 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
     int num = argc - 1;
+    
+    if (num == 0) {
+        cout << "No arguments provided\n";
+    }
 
     if (num == 0) {
         cout << "No arguments provided\n";
@@ -18,7 +22,7 @@ int main(int argc, char* argv[]) {
         cout << num << " arguments provided\n";
     }
     if (argv != 0) {
-        cout << "argv not null\n";;; // intentional extra-semicolon
+        cout << "argv not null\n"; // intentional extra-semicolon
     }
     if (argv == nullptr) {
         return **argv; // intentional nullptr dereference
