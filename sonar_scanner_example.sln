@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sonar_scanner_example", "sonar_scanner_example.vcxproj", "{FBCFF3DA-F6E2-4DA3-93FC-9F16FA91AF11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBCFF3DA-F6E2-4DA3-93FC-9F16FA91AF11}.Debug|x86.ActiveCfg = Debug|Win32
+		{FBCFF3DA-F6E2-4DA3-93FC-9F16FA91AF11}.Debug|x86.Build.0 = Debug|Win32
+		{FBCFF3DA-F6E2-4DA3-93FC-9F16FA91AF11}.Release|x86.ActiveCfg = Release|Win32
+		{FBCFF3DA-F6E2-4DA3-93FC-9F16FA91AF11}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {367E5D6D-41AF-4E0A-9997-97DDD9995B1C}
+	EndGlobalSection
+EndGlobal
