@@ -8,7 +8,6 @@ int main(int argc, char* argv[]) {
     if (num == 0) {
         cout << "No arguments provided\n";
     }
-
     if (num == 0) {
         cout << "No arguments provided\n";
     }
