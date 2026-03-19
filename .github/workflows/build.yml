@@ -12,20 +12,20 @@ jobs:
     env:
       BUILD_WRAPPER_OUT_DIR: build_wrapper_output_directory # Directory where build-wrapper output will be placed
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
       - name: Set up msbuild
         uses: microsoft/setup-msbuild@v2
       - name: Install Build Wrapper
-        uses: SonarSource/sonarqube-scan-action/install-build-wrapper@v4
+        uses: SonarSource/sonarqube-scan-action/install-build-wrapper@v7
       - name: Run Build Wrapper
         run: |
           build-wrapper-win-x86-64.exe --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} msbuild sonar_scanner_example.vcxproj /t:rebuild /nodeReuse:false
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v4
+        uses: SonarSource/sonarqube-scan-action@v7
         env:
           SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }} # Put the name of your token here
         with:
           args: >
-            --define sonar.cfamily.compile-commands="${{ env.BUILD_WRAPPER_OUT_DIR }}/compile_commands.json"
+            --define sonar.cfamily.compile-commands=${{ env.BUILD_WRAPPER_OUT_DIR }}/compile_commands.json
